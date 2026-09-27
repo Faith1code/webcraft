@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="pictures/favicon.jpg">
+  <link rel="apple-touch-icon" href="pictures/webcraft-logo.jpg">
+  <title>WebCraft</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">
+      <img src="pictures/webcraft-logo.jpg" style="height:45px; border-radius:8px; vertical-align:middle;">
+      WebCraft
+    </h1>
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">☰</label>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="preview.html">Preview</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="pictures/my-photo.jpg" alt="Faith" class="profile-pic">
+    <h2>Hi, I'm Faith — I craft websites that sell</h2>
+    <p>Affordable, fast websites for Nigerian businesses. No templates, just clean code that loads quick.</p>
+    <a href="#contact" class="btn">Chat Me</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="padding:60px 20px; background:#0a0a23; color:white; text-align:center;">
+    <img src="pictures/webcraft-logo.jpg" style="height:60px; margin-bottom:15px;">
+    <h2 style="font-size:28px; margin-bottom:10px;">Services We Craft</h2>
+    <p style="color:#aaa; margin-bottom:30px;">We don't just build websites, we build businesses.</p>
+
+    <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+      <div style="background:#111; padding:20px; border-radius:12px; width:280px; border:1px solid #4169E1;">
+        <h3>🛠️ Business Websites</h3>
+        <p style="color:#aaa; font-size:14px;">For shops, salons, schools wherever you may be. — looks good on phone.</p>
+      </div>
+      <div style="background:#111; padding:20px; border-radius:12px; width:280px; border:1px solid #4169E1;">
+        <h3>Portfolio Sites</h3>
+        <p style="color:#aaa; font-size:14px;">For photographers, designers, devs like you.</p>
+      </div>
+      <div style="background:#111; padding:20px; border-radius:12px; width:280px; border:1px solid #4169E1;">
+        <h3>⚡ Landing Pages</h3>
+        <p style="color:#aaa; font-size:14px;">Fast pages that turn visitors into WhatsApp messages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" style="padding:60px 20px; background:white; text-align:center;">
+    <h2 style="font-size:28px;">Recent Crafts</h2>
+    <p style="color:#666;">Real sites built by WebCraft</p>
+
+    <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px;">
+      <div style="width:300px; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+        <img src="pictures/my-photo.jpg" style="width:100%; height:320px; object-fit:cover; object-position:top center;">
+        <div style="padding:15px; text-align:left;">
+          <h4>Live Life Brand</h4>
+          <p style="font-size:13px; color:#666;">Modern lifestyle site — HTML/CSS/Responsive</p>
+        </div>
+      </div>
+    </div>
+ 
+    <br>
+    <a href="project.html" style="display:inline-block; background:#1d4ed8; color:white; padding:10px 20px; border-radius:30px; font-size:14px; font-weight:bold; text-decoration:none; margin-top:15px;">View Live Projects and Packages→</a>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact" class="contact-main">
+  <h2>Let's Build Yours</h2>
+  <p class="contact-sub">Got an idea? Let's craft it into a website that works.</p>
+  <a href="https://wa.me/2348164172384?text=Hi%20Faith%2C%20I%20want%20a%20website%20from%20WebCraft" target="_blank" class="btn-whatsapp-white">Chat on WhatsApp</a>
+
+  <div class="contact-card">
+    <h2>Let's Build Your Site</h2>
+    <p class="form-sub">Tell me what business you do: Email Request.</p>
+    
+    <form action="https://formspree.io/f/mwlplvgn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="business" placeholder="What do you own? e.g Business, e.t.c" required>
+      <textarea name="message" placeholder="I own a..., I need website for..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="powered">Powered by email automation — replies go to your inbox instantly</p>
+  </div>
+
+  <p class="footer-mini">WebCraft • Built by Faith Francis • Kaduna, NG</p>
+</section>
+
+<!-- REVIEWS SECTION - CLEAN -->
+<section id="reviews" class="contact-main">
+  <h2>Leave a Review</h2>
+  <p class="contact-sub">What do you think about WebCraft services?</p>
+
+  <div class="contact-card">
+    <h2>Your Feedback</h2>
+    <p class="form-sub">Real reviews appear live on Preview page.</p>
+    <form id="reviewForm">
+      <input type="text" id="reviewName" placeholder="Your Name" required>
+      <select id="reviewStars" required>
+        <option value="5">★★★★★ 5 Stars</option>
+        <option value="4">★★★★ 4 Stars</option>
+        <option value="3">★★★ 3 Stars</option>
+        <option value="2">★★ 2 Stars</option>
+        <option value="1">★ 1 Star</option>
+      </select>
+      <textarea id="reviewText" placeholder="Your review..." required></textarea>
+      <button type="submit" id="reviewBtn">Post Review</button>
+    </form>
+    <p class="powered"><a href="preview.html" class="link-preview">View Live Reviews →</a></p>
+    <div id="reviewSuccess">Review posted!</div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <footer>
+    <div class="footer-wrap">
+      <p>© 2026 WebCraft by Faith</p>
+      <ul>
+        <li><a href="#home">Back to top</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348164172384?text=Hi%20Faith%2C%20I%20want%20a%20website%20from%20WebCraft" class="whatsapp-btn" target="_blank">💬</a>
+  
+  <script src="index.js"></script>
+</body>
+</html>
