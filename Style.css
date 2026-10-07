@@ -518,3 +518,7 @@ footer a:hover {
   object-fit: cover !important;
   object-position: top center !important;
 }
+
+/* hide netlify badge */
+iframe[src*="netlify"] { display: none !important; }
+div[class*="netlify"] + div { margin-bottom: 0 !important; }
